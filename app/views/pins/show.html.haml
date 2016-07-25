@@ -1,0 +1,37 @@
+#wrapper
+	#pin_show.row
+		.col-md-8.col-md-offset-2
+			.panel.panel-default
+				.panel-heading.pin_image
+					= image_tag @pin.image.url
+				.panel-body
+					%h1= @pin.title
+					%p.description= @pin.description
+				.panel-footer
+					.row
+						.col-md-6
+							%p.user
+								Submitted by
+								%a{:href => "/profiles/#{@pin.user.username}"} 
+									= @pin.user.username
+						.col-md-6
+							.btn-group.pull-right
+								= link_to like_pin_path(@pin), method: :put, class: "btn btn-default" do
+									%span.glyphicon.glyphicon-heart
+									= @pin.get_upvotes.size
+								- if @pin.user == current_user
+									= link_to "Edit", edit_pin_path, class: "btn btn-default"
+									= link_to "Delete", pin_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
+				.panel-footer
+					%h4 Comments
+					#comments
+						= render :partial => @pin.comments\
+					- if current_user
+						= simple_form_for [@pin, Comment.new]	do |f|
+							%p
+							/
+								<haml_loud> f.label :body, "New Comment" </haml_loud></br>
+								<haml_loud> f.text_area :body </haml_loud>
+							= f.input :body, :label => "New Comment", as: :text, input_html: { rows: "3" }
+							%p= f.submit "Add Comment", class: "btn btn-primary"
+

@@ -1,0 +1,262 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require 'masonry/transitions'
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'chosen';
+body {
+	background: #E9E9E9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+nav {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	.navbar-brand {
+		a {
+			color: #BD1E23;
+			font-weight: bold;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+#pins {
+  margin: 0 auto;
+  width: 100%;
+  .box {
+	  margin: 10px;
+	  width: 350px;
+	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	  border-radius: 7px;
+	  text-align: center;
+	  img {
+	  	max-width: 100%;
+	  	height: auto;
+	  }
+	  h2 {
+	  	font-size: 22px;
+	  	margin: 0;
+	  	padding: 25px 10px;
+	  	a {
+				color: #474747;
+	  	}
+	  }
+	  .user {
+	  	font-size: 12px;
+	  	border-top: 1px solid #EAEAEA;
+			padding: 15px;
+			margin: 0;
+	  }
+	}
+}
+
+#edit_page {
+	.current_image {
+		img {
+			display: block;
+			margin: 20px 0;
+		}
+	}
+}
+
+#pin_show {
+	.panel-heading {
+		padding: 0;
+	}
+	.pin_image {
+		img {
+			max-width: 100%;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.panel-body {
+		padding: 35px;
+		h1 {
+			margin: 0 0 10px 0;
+		}
+		.description {
+			color: #868686;
+			line-height: 1.75;
+			margin: 0;
+		}
+	}
+	.panel-footer {
+		padding: 20px 35px;
+		p {
+			margin: 0;
+		}
+		.user {
+			padding-top: 8px;
+		}
+	}
+}
+
+textarea 
+{
+	min-width: 500px;	
+}
+#comments
+{
+	
+}
+html 
+{ 
+	
+}
+.field
+{
+	
+}
+
+body {
+  background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+.round-image-50 {
+    background-color: white;
+   /* border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    */
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+		text-align: center; 
+    margin: 0 auto;
+    img 
+    { 
+    	
+    	
+    }
+}
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}

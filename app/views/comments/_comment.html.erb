@@ -1,0 +1,11 @@
+<%= div_for(comment) do %>
+	<p>
+		<strong> <%= comment.user %> </strong><%= h(comment.body) %>
+		<br>
+		Posted <%= time_ago_in_words(comment.created_at) %> </br>
+		<% if comment.user == current_user -%>
+			<%= link_to 'Delete', comment, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-default" %>	
+		<% end %>
+		<hr>
+	</p>
+<% end %>

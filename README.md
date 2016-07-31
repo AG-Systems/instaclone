@@ -8,4 +8,6 @@ Have a option for profile picture
 
 Direct message
 
+Make a mobile app
+
 http://www.peoplecancode.com/tutorials/users-avatars-uploading-images-using-paperclip

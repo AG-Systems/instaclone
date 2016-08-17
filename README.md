@@ -12,4 +12,6 @@ Make a mobile app
 
 Fix the stupid glitchy css
 
+Make it work with heroku (feels nearly impossible at this point of time)
+
 http://www.peoplecancode.com/tutorials/users-avatars-uploading-images-using-paperclip

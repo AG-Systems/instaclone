@@ -1,5 +1,20 @@
 # instaclone
 
+Features:
+
+Admin
+
+Users can comment
+
+Registration
+
+Users can like
+
+Users have their own unique profile (unique profile url)
+
+Image posting
+
+
 Todo:
 
 Make sure the user cant spam comments
